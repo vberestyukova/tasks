@@ -1,0 +1,9 @@
+// Task 1. Проверка на уникальность всех символов строки
+const isUnique = function(string) {
+  let letterSet = new Set();
+  for (let i = 0; i < string.length; i++) {
+    if (letterSet.has(string[i])) {return false};
+    letterSet.add(string[i]);
+  }
+  return true;
+}
