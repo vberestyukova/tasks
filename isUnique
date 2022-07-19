@@ -7,3 +7,9 @@ const isUnique = function(string) {
   }
   return true;
 }
+
+
+//Оптимально
+const isUnique = function(string) {
+  return new Set(string).size === string.length;
+}
